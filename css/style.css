@@ -666,7 +666,7 @@ header .image-text .profession {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
+    background: var(--text-color);
     border-radius: 10px;
 }
 
@@ -704,10 +704,18 @@ header .image-text .profession {
 }
 
 .main-content .content .tab-content .course-card {
+    cursor: pointer;
     width: 250px;
+    height: 290px;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0px 2px 10px 0px rgb(0 0 0 / 30%);
+}
+
+.main-content .content .tab-content .course-card:hover {
+    transform: translateY(-10px);
+    transition: var(--tran-05);
+    box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 50%);
 }
 
 .main-content .content .tab-content .course-card img {
@@ -726,10 +734,6 @@ header .image-text .profession {
     font-size:18px;
     font-weight: 500;
     color: black;
-}
-
-.main-content .content .tab-content .course-card .details a:hover {
-    color: var(--primary-color);
 }
 
 .main-content .content .tab-content .course-card .details p {
