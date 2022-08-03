@@ -102,14 +102,14 @@ a {
     position: relative;
     display: inline-block;
   }
-  
+
   .right-header .profile-container .dropdown-content {
     display: none;
     position: absolute;
     width: max-content;
     margin-top: 20px;
     left: -65px;
-    transition: var(--tran-05); 
+    transition: var(--tran-05);
     background-color: var(--sidebar-color);
     border-radius: 10px;
     box-shadow: 0px 1px 5px 0px var(--primary-color);
@@ -127,12 +127,12 @@ a {
     padding: 0;
     margin: 0 15px 0 10px;
   }
-  
+
   .right-header .profile-container .dropdown-content a:hover {
     background-color: var(--primary-color);
     color: white;
   }
-  
+
   .right-header .profile-container .dropdown-content.active {
     display: block;
   }
@@ -148,7 +148,7 @@ a {
 	padding: 10px;
     color: var(--text-color);
     right: 26px;
-    transition: var(--tran-05); 
+    transition: var(--tran-05);
     margin-top: 20px;
 	position: absolute;
 	display: none;
@@ -370,9 +370,6 @@ header .image-text .profession {
     transform: translateY(30%) rotate(0deg);
 }
 
-.sidebar .menu {
-    margin-top: 10px;
-}
 
 .sidebar li.search-box {
     border-radius: 6px;
@@ -661,13 +658,13 @@ header .image-text .profession {
     width: 5px;
     height: 4px;
 }
-  
+
 /* Track */
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
 }
-  
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: var(--primary-color);
@@ -728,7 +725,7 @@ header .image-text .profession {
 
 .main-content .content .tab-content .course-card .details a {
     font-size: large;
-    font-weight: bold;  
+    font-weight: bold;
     color: var(--text-color);
 }
 
@@ -913,11 +910,11 @@ header .image-text .profession {
     #mobile-menu.is-active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
-    
+
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-    
+
     #logo {
         width: 80%;
     }
@@ -1080,7 +1077,7 @@ header .image-text .profession {
 }
 
 @media screen and (max-width: 710px) {
-    
+
     #logo {
         width: 100%;
     }
