@@ -706,7 +706,7 @@ header .image-text .profession {
 .main-content .content .tab-content .course-card {
     cursor: pointer;
     width: 250px;
-    height: 290px;
+    min-height: 290px;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0px 2px 10px 0px rgb(0 0 0 / 30%);
@@ -1111,7 +1111,7 @@ header .image-text .profession {
     }
 
     .main-content .content .tab-content .course-card {
-        width: 45%;
+        width: 40%;
     }
 
     .main-content .collapsible {
