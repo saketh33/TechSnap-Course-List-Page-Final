@@ -10,12 +10,13 @@
 
 :root {
     /* ===== Colors ===== */
-    --body-color: #E4E9F7;
+    --body-color:rgb(246,248,250);
     --sidebar-color: #FFF;
     --primary-color: #fd00bd;
-    --primary-color-light: #F6F5FF;
+    --primary-color-light: white;
     --toggle-color: #DDD;
-    --text-color: #707070;
+    --text-color: #000000;
+    --banner-heading:#eceaff;
 
     /* ====== Transition ====== */
     --tran-02: all 0.2s ease;
@@ -102,6 +103,7 @@ a {
     position: relative;
     display: inline-block;
   }
+
 
   .right-header .profile-container .dropdown-content {
     display: none;
@@ -599,7 +601,7 @@ header .image-text .profession {
 
 /* collapsable cards */
 .main-content .collapsible {
-    background: var(--sidebar-color);
+    background: var(--banner-heading);
     color: var(--text-color);
     cursor: pointer;
     padding: 18px;
@@ -608,14 +610,9 @@ header .image-text .profession {
     text-align: left;
     outline: none;
     font-size: 15px;
+    font-weight:500 ;
 }
 
-.main-content .collapsible .active,
-.main-content .collapsible:hover {
-    background-color: var(--primary-color);
-    color: white;
-    font-weight: bold;
-}
 
 .main-content .content {
     width: 100%;
