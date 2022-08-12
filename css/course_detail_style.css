@@ -93,15 +93,11 @@ a {
     align-items: center;
 }
 
-.right-header i {
-    cursor: pointer;
-    padding: 5px 10px;
-    font-size: 20px;
+.right-header .right-header-icons {
+    display: block;
     margin: 0 30px;
-}
-
-.right-header i:hover {
-    color: var(--primary-color);
+    line-height: 0em;
+    cursor: pointer;
 }
 
 .right-header .bx {
@@ -232,6 +228,12 @@ being the ones which make the drop-down to stay hidden */
     width: 150px;
 }
 
+/* All apps */
+.right-header .all-apps-container .all-apps-icon {
+    width: 25px;
+    height: 25px;
+}
+
 /* Profile Drop-down */
 
 .right-header .profile-container {
@@ -239,11 +241,16 @@ being the ones which make the drop-down to stay hidden */
     display: inline-block;
 }
 
+.right-header .profile-container .profile-icon {
+    width: 45px;
+    height: 40px;
+}
+
 .right-header .profile-container .dropdown-content {
     display: none;
     position: absolute;
-    width: max-content;
-    margin-top: 20px;
+    min-width: 170px;
+    margin-top: 10px;
     left: -65px;
     transition: var(--tran-05);
     background-color: var(--sidebar-color);
@@ -274,16 +281,20 @@ being the ones which make the drop-down to stay hidden */
 }
 
 /* Notifications */
+.right-header .notification-container .notify-icon {
+    width: 30px;
+    height: 30px;
+}
 
 .right-header .notification-container .dropdown {
-    width: 250px;
+    width: 350px;
     height: auto;
     background: var(--sidebar-color);
     border-radius: 5px;
     box-shadow: 0px 1px 5px 0px var(--primary-color);
-    padding: 10px;
+    padding: 5px;
     color: var(--text-color);
-    right: 26px;
+    right: 30px;
     transition: var(--tran-05);
     margin-top: 20px;
     position: absolute;
@@ -293,7 +304,7 @@ being the ones which make the drop-down to stay hidden */
 .right-header .notification-container .dropdown .notify_item {
     display: flex;
     align-items: center;
-    padding: 10px 0;
+    padding: 5px;
     border-bottom: 1px solid #dbdaff;
 }
 
@@ -313,19 +324,51 @@ being the ones which make the drop-down to stay hidden */
 }
 
 .right-header .notification-container .dropdown .notify_item .notify_info {
-    font-size: 13px;
+    font-size: 0.7em;
 }
 
-.right-header .notification-container .dropdown .notify_item .notify_info .notify_time {
+.right-header .notification-container .dropdown .notify_item .notify_time {
     color: var(--primary-color);
     font-size: 12px;
+    padding-left: 5px;
+    text-align: center;
+}
+
+.right-header .notification-container .dropdown .notify_item .notify-btn {
+    border: 1px solid var(--primary-color);
+    padding: 3px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: var(--sidebar-color);
+    color: var(--primary-color);
+    font-size: inherit;
+    margin: 5px 0;
+}
+
+.right-header .notification-container .dropdown .notify_item .notify-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.right-header .notification-container .dropdown .notify_See_All {
+    display: flex;
+    justify-content: center;
+}
+
+.right-header .notification-container .dropdown .notify_See_All .see-All {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 5px;
+    color: var(--primary-color);
 }
 
 .right-header .notification-container .dropdown:before {
     content: "";
     position: absolute;
     top: -30px;
-    left: 50%;
+    left: 64%;
     transform: translateX(-50%);
     border: 15px solid;
     border-color: transparent transparent var(--primary-color) transparent;
@@ -371,7 +414,7 @@ body.dark {
     top: 0;
     left: 0;
     height: 100%;
-    width: 250px;
+    width: 235px;
     padding: 70px 14px 10px 14px;
     background: var(--sidebar-color);
     transition: var(--tran-05);
@@ -398,7 +441,7 @@ body.dark {
 }
 
 .sidebar .icon {
-    min-width: 60px;
+    min-width: 55px;
     border-radius: 6px;
     height: 100%;
     display: flex;
@@ -578,7 +621,7 @@ header .image-text .profession {
 
 .menu-bar .mode .sun-moon {
     height: 50px;
-    width: 60px;
+    width: 55px;
 }
 
 .mode .sun-moon i {
@@ -639,8 +682,8 @@ header .image-text .profession {
     position: relative;
     top: 0;
     padding: 110px 20px 30px;
-    left: 250px;
-    width: calc(100% - 250px);
+    left: 235px;
+    width: calc(100% - 235px);
     background-color: var(--body-color);
     transition: var(--tran-05);
 }
@@ -780,61 +823,44 @@ header .image-text .profession {
 }
 
 .main-content .content .course-list .course-card .row-1 {
-    display: flex;
-    height: 20%;
-    align-items: flex-start;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 30px;
-}
-
-.main-content .content .course-list .course-card .row-1 i.fa-forward {
-    display: none;
-}
-
-.main-content .content .course-list .course-card .row-1 i.fa-forward.is-active {
-    display: block;
-}
-
-.main-content .content .course-list .course-card .row-2 {
     display: block;
     margin: auto 0;
     text-align: left;
 }
 
-.main-content .content .course-list .course-card .row-2 h2 {
+.main-content .content .course-list .course-card .row-1 h2 {
     margin: auto 8px;
     font-size: 20px;
     color: rgb(0, 110, 255);
     font-weight: 500;
 }
 
-.main-content .content .course-list .course-card .row-3 {
+.main-content .content .course-list .course-card .row-2 {
     display: flex;
     flex-direction: column;
     height: 25%;
     justify-content: space-evenly;
 }
 
-.main-content .content .course-list .course-card .row-3 .pro-bar {
+.main-content .content .course-list .course-card .row-2 .pro-bar {
     width: 100%;
     height: 8px;
     border-radius: 10px;
     border: 1px solid var(--text-color);
 }
 
-.main-content .content .course-list .course-card .row-3 .pro-bar .completed {
+.main-content .content .course-list .course-card .row-2 .pro-bar .completed {
     height: 100%;
     width: 4%;
     background-color: var(--primary-color);
 }
 
-.main-content .content .course-list .course-card .row-3 .details {
+.main-content .content .course-list .course-card .row-2 .details {
     display: flex;
     justify-content: space-between;
 }
 
-.main-content .content .course-list .course-card .row-3 .details p {
+.main-content .content .course-list .course-card .row-2 .details p {
     margin: 10px 0;
     font-size: 14px;
 }

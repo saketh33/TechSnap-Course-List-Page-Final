@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Detail Page</title>
-    <link rel="stylesheet" href="css/course_detail.css">
+    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/course_detail_style.css">
 
     <!----===== Boxicons CSS ===== -->
@@ -26,12 +26,14 @@
 
             <div class="right-header">
                 <div class="all-apps-container">
-                    <i class='bx bxs-grid'></i>
+                    <div class="right-header-icons">
+                        <img class="all-apps-icon icon" src="images/Apps.png">
+                    </div>
                 </div>
-
+    
                 <div class="notification-container">
-                    <div class="notification_icon">
-                        <i id="notify" class="fas fa-bell"></i>
+                    <div class="right-header-icons">
+                        <img class="notify-icon icon" src="images/notification.png">
                     </div>
                     <div class="dropdown">
                         <div class="notify_item">
@@ -39,8 +41,12 @@
                                 <img src="images/User.png" alt="profile_pic" style="width: 50px">
                             </div>
                             <div class="notify_info">
-                                <p>You have submitted your assignment submission for<span>Assignment-1 (21.06.2022)</span></p>
-                                <span class="notify_time">10 minutes ago</span>
+                                <p>You have submitted your assignment submission for<span>Assignment-1</span></p>
+                                <button class="notify-btn">Explore All</button>
+                            </div>
+                            <div class="notify_time">
+                                <p>2h</p>
+                                <h1>...</h1>
                             </div>
                         </div>
                         <div class="notify_item">
@@ -48,22 +54,31 @@
                                 <img src="images/User.png" alt="profile_pic" style="width: 50px">
                             </div>
                             <div class="notify_info">
-                                <p>You have submitted your assignment submission for<span>Assignment-1 (21.06.2022)</span></p>
-                                <span class="notify_time">10 minutes ago</span>
+                                <p>You have submitted your assignment submission for<span>Assignment-1</span></p>
+                                <button class="notify-btn">Explore All</button>
                             </div>
+                            <div class="notify_time">
+                                <p>2h</p>
+                                <h1>...</h1>
+                            </div>
+                        </div>
+                        <div class="notify_See_All">
+                            <button class="see-All">See All Notifications</button>
                         </div>
                     </div>
                 </div>
-
+    
                 <div class="profile-container">
-                    <i id="profile" class="fa-solid fa-user"></i>
+                    <div class="right-header-icons">
+                        <img class="profile-icon icon" src="images/User.png">
+                    </div>
                     <div class="dropdown-content">
                         <a href="#"><span><i class="fa-solid fa-gauge"></i>Dashboard</span></a>
                         <a href="#"><span><i class="fa-solid fa-table"></i>Grades</span></a>
                         <a href="#"><span><i class="fa-solid fa-comment"></i>Messages</span></a>
                         <a href="#"><span><i class="fa-solid fa-wrench"></i>Preferences</span></a>
                         <a href="#"><span><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</span></a>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -73,78 +88,10 @@
                 <ul class="navigation">
                     <li><a href="#" class="first">Course Home</a></li>
                     <li><a href="https://vincenzo5k.github.io/TechSnap-Course-Learning-Page/" target="_blank">Content</a></li>
-                    <li><a href="#">Test & Assignments<span><i class="fa-solid fa-angle-down"></i></span></a>
-
-                    <!--  -->
-                    <ul>
-                        <li><a href="#">Link-1</a></li>
-                        <li><a href="#">Link-2</a></li>
-                        <li><a href="#">Sub-Drop Down <span><i class="fa-solid fa-angle-right"></i></span></a>
-                            <ul>
-                                <li><a href="#">Link-1</a></li>
-                                <li><a href="#">Link-2</a></li>
-                                <li><a href="#">Link-3</a></li>
-                                <li><a href="#">Link-4</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <!--  -->
-
-                    </li>
-                    <li><a href="#">Communication<span><i class="fa-solid fa-angle-down"></i></span></a>
-
-                    <!--  -->
-                    <ul>
-                        <li><a href="#">Link-1</a></li>
-                        <li><a href="#">Link-2</a></li>
-                        <li><a href="#">Sub-Drop Down <span><i class="fa-solid fa-angle-right"></i></span></a>
-                            <ul>
-                                <li><a href="#">Link-1</a></li>
-                                <li><a href="#">Link-2</a></li>
-                                <li><a href="#">Link-3</a></li>
-                                <li><a href="#">Link-4</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <!--  -->
-
-                    </li>
-                    <li><a href="#">Course Tools<span><i class="fa-solid fa-angle-down"></i></span></a>
-
-                    <!--  -->
-                    <ul>
-                        <li><a href="#">Link-1</a></li>
-                        <li><a href="#">Link-2</a></li>
-                        <li><a href="#">Sub-Drop Down <span><i class="fa-solid fa-angle-right"></i></span></a>
-                            <ul>
-                                <li><a href="#">Link-1</a></li>
-                                <li><a href="#">Link-2</a></li>
-                                <li><a href="#">Link-3</a></li>
-                                <li><a href="#">Link-4</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <!--  -->
-
-                    </li>
-                    <li><a href="#">E - Library<span><i class="fa-solid fa-angle-down"></i></span></a>
-
-                    <!--  -->
-                    <ul>
-                        <li><a href="#">Link-1</a></li>
-                        <li><a href="#">Link-2</a></li>
-                        <li><a href="#">Sub-Drop Down <span><i class="fa-solid fa-angle-right"></i></span></a>
-                            <ul>
-                                <li><a href="#">Link-1</a></li>
-                                <li><a href="#">Link-2</a></li>
-                                <li><a href="#">Link-3</a></li>
-                                <li><a href="#">Link-4</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <!--  -->
-
-                    </li>
+                    <li><a href="#">Test & Assignments</a></li>
+                    <li><a href="#">Communication</a></li>
+                    <li><a href="#">Course Tools</a></li>
+                    <li><a href="#">E - Library</a></li>
                 </ul>
             </nav>
         </div>
@@ -249,13 +196,9 @@
                             <div class="course-list">
                                 <div class="course-card">
                                     <div class="row-1">
-                                        <i class="fa-solid fa-circle-info"></i>
-                                        <i class="fa-solid fa-forward"></i>
-                                    </div>
-                                    <div class="row-2">
                                         <h2><a href="https://" target="_blank" rel="noopener noreferrer">Course Introduction</a></h2>
                                     </div>
-                                    <div class="row-3">
+                                    <div class="row-2">
                                         <div class="pro-bar">
                                             <div class="completed"></div>
                                         </div>
@@ -268,13 +211,9 @@
 
                                 <div class="course-card">
                                     <div class="row-1">
-                                        <i class="fa-solid fa-circle-info"></i>
-                                        <i class="fa-solid fa-forward is-active"></i>
-                                    </div>
-                                    <div class="row-2">
                                         <h2><a href="https://" target="_blank" rel="noopener noreferrer">Unit 01 - Introduction</a></h2>
                                     </div>
-                                    <div class="row-3">
+                                    <div class="row-2">
                                         <div class="pro-bar">
                                             <div class="completed"></div>
                                         </div>
@@ -287,13 +226,9 @@
 
                                 <div class="course-card">
                                     <div class="row-1">
-                                        <i class="fa-solid fa-circle-info"></i>
-                                        <i class="fa-solid fa-forward is-active"></i>
-                                    </div>
-                                    <div class="row-2">
                                         <h2><a href="https://" target="_blank" rel="noopener noreferrer">Unit 02 - Mathemaical Logic</a></h2>
                                     </div>
-                                    <div class="row-3">
+                                    <div class="row-2">
                                         <div class="pro-bar">
                                             <div class="completed"></div>
                                         </div>
@@ -306,89 +241,9 @@
 
                                 <div class="course-card">
                                     <div class="row-1">
-                                        <i class="fa-solid fa-circle-info"></i>
-                                        <i class="fa-solid fa-forward is-active"></i>
-                                    </div>
-                                    <div class="row-2">
                                         <h2><a href="https://" target="_blank" rel="noopener noreferrer">Unit 03 - Modern Algebra</a></h2>
                                     </div>
-                                    <div class="row-3">
-                                        <div class="pro-bar">
-                                            <div class="completed"></div>
-                                        </div>
-                                        <div class="details">
-                                            <p><span class="prog-count">0</span>%</p>
-                                            <p>1 of 28 Topics Completed</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="course-card">
-                                    <div class="row-1">
-                                        <i class="fa-solid fa-circle-info"></i>
-                                        <i class="fa-solid fa-forward is-active"></i>
-                                    </div>
                                     <div class="row-2">
-                                        <h2><a href="https://" target="_blank" rel="noopener noreferrer">Unit 04 - Trigonometry</a></h2>
-                                    </div>
-                                    <div class="row-3">
-                                        <div class="pro-bar">
-                                            <div class="completed"></div>
-                                        </div>
-                                        <div class="details">
-                                            <p><span class="prog-count">5</span>%</p>
-                                            <p>1 of 28 Topics Completed</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="course-card">
-                                    <div class="row-1">
-                                        <i class="fa-solid fa-circle-info"></i>
-                                        <i class="fa-solid fa-forward is-active"></i>
-                                    </div>
-                                    <div class="row-2">
-                                        <h2><a href="https://" target="_blank" rel="noopener noreferrer">Unit 05 - Limits and Contunity</a></h2>
-                                    </div>
-                                    <div class="row-3">
-                                        <div class="pro-bar">
-                                            <div class="completed"></div>
-                                        </div>
-                                        <div class="details">
-                                            <p><span class="prog-count">7</span>%</p>
-                                            <p>1 of 28 Topics Completed</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="course-card">
-                                    <div class="row-1">
-                                        <i class="fa-solid fa-circle-info"></i>
-                                        <i class="fa-solid fa-forward is-active"></i>
-                                    </div>
-                                    <div class="row-2">
-                                        <h2><a href="https://" target="_blank" rel="noopener noreferrer">Unit 06 - Differentiation</a></h2>
-                                    </div>
-                                    <div class="row-3">
-                                        <div class="pro-bar">
-                                            <div class="completed"></div>
-                                        </div>
-                                        <div class="details">
-                                            <p><span class="prog-count">3</span>%</p>
-                                            <p>1 of 28 Topics Completed</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="course-card">
-                                    <div class="row-1">
-                                        <i class="fa-solid fa-circle-info"></i>
-                                        <i class="fa-solid fa-forward is-active"></i>
-                                    </div>
-                                    <div class="row-2">
-                                        <h2><a href="https://" target="_blank" rel="noopener noreferrer">Unit 07 - Integration</a></h2>
-                                    </div>
-                                    <div class="row-3">
                                         <div class="pro-bar">
                                             <div class="completed"></div>
                                         </div>
@@ -405,20 +260,6 @@
 
                 <div class="bottom-content">
                     <div class="leftside-content">
-                        <div class="Activity-Feed-container part">
-                            <button type="button" class="collapsible">Activity Feed<span><i class="fa-solid fa-angle-down"></i>
-                                <i class="fa-solid fa-angle-up"></i></span></button>
-                            <div class="content">
-                                <h1>Latest Posts</h1>
-                                <div class="posts-list">
-                                    <div class="post-card">
-                                        <p>There's nothing here just yet.</p>
-                                        <p>This is where you'll find assignments, announcements, lessons and other resourses. Check back soon!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="Content-Navigator-container part">
                             <button type="button" class="collapsible">Content Navigator <span><i class="fa-solid fa-angle-down"></i>
                                 <i class="fa-solid fa-angle-up"></i></span></button>
@@ -518,6 +359,20 @@
                                 </div>
                             </div>
                         </div>
+                        
+                        <div class="Activity-Feed-container part">
+                            <button type="button" class="collapsible">Activity Feed<span><i class="fa-solid fa-angle-down"></i>
+                                <i class="fa-solid fa-angle-up"></i></span></button>
+                            <div class="content">
+                                <h1>Latest Posts</h1>
+                                <div class="posts-list">
+                                    <div class="post-card">
+                                        <p>There's nothing here just yet.</p>
+                                        <p>This is where you'll find assignments, announcements, lessons and other resourses. Check back soon!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="rightside-content">
                         <div class="Announcements-container part">
@@ -603,7 +458,6 @@
         </section>
     </div>
 
-    <script src="js/app.js"></script>
     <script src="js/course_detail.js"></script>
 </body>
 </html>

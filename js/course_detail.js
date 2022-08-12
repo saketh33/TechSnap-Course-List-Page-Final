@@ -14,14 +14,14 @@ const header = document.querySelector('.header');
 const right_header = header.querySelector('.right-header');
 
 const notification_container = right_header.querySelector('.notification-container');
-const notify = notification_container.querySelector('#notify');
+const notify = notification_container.querySelector('.notify-icon');
 const notifi_dropdown = notification_container.querySelector('.dropdown');
 
 
 const profile_container = header.querySelector('.profile-container');
 const profile_dropdown = profile_container.querySelector('.dropdown-content');
 
-const profile = profile_container.querySelector('#profile');
+const profile = profile_container.querySelector('.profile-icon');
 
 notify.addEventListener('click', function() {
     profile_dropdown.classList.remove('active');

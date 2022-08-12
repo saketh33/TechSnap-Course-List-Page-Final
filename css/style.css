@@ -11,13 +11,13 @@
 
 :root {
     /* ===== Colors ===== */
-    --body-color:rgb(246,248,250);
+    --body-color: rgb(246, 248, 250);
     --sidebar-color: #FFF;
     --primary-color: #fd00bd;
     --primary-color-light: white;
     --toggle-color: #DDD;
     --text-color: #000000;
-    --banner-heading:#eceaff;
+    --banner-heading: #eceaff;
 
     /* ====== Transition ====== */
     --tran-02: all 0.2s ease;
@@ -76,15 +76,11 @@ a {
     align-items: center;
 }
 
-.right-header i {
-    cursor: pointer;
-    padding: 5px 10px;
-    font-size: 20px;
+.right-header .right-header-icons {
+    display: block;
     margin: 0 30px;
-}
-
-.right-header i:hover {
-    color: var(--primary-color);
+    line-height: 0em;
+    cursor: pointer;
 }
 
 .right-header .bx {
@@ -98,108 +94,155 @@ a {
     min-height: 100vh;
 }
 
+/* All apps */
+.right-header .all-apps-container .all-apps-icon {
+    width: 25px;
+    height: 25px;
+}
+
+
 /* Profile Drop-down */
 
 .right-header .profile-container {
     position: relative;
     display: inline-block;
-  }
+}
 
+.right-header .profile-container .profile-icon {
+    width: 45px;
+    height: 40px;
+}
 
-  .right-header .profile-container .dropdown-content {
+.right-header .profile-container .dropdown-content {
     display: none;
     position: absolute;
-    width: max-content;
-    margin-top: 20px;
+    min-width: 170px;
+    margin-top: 10px;
     left: -65px;
     transition: var(--tran-05);
     background-color: var(--sidebar-color);
     border-radius: 10px;
     box-shadow: 0px 1px 5px 0px var(--primary-color);
-  }
+}
 
-  .right-header .profile-container .dropdown-content a {
+.right-header .profile-container .dropdown-content a {
     color: var(--text-color);
     padding: 10px;
     text-decoration: none;
     border-radius: 10px;
     display: block;
-  }
+}
 
-  .right-header .profile-container .dropdown-content a span i {
+.right-header .profile-container .dropdown-content a span i {
     padding: 0;
     margin: 0 15px 0 10px;
-  }
+}
 
-  .right-header .profile-container .dropdown-content a:hover {
+.right-header .profile-container .dropdown-content a:hover {
     background-color: var(--primary-color);
     color: white;
-  }
+}
 
-  .right-header .profile-container .dropdown-content.active {
+.right-header .profile-container .dropdown-content.active {
     display: block;
-  }
+}
 
 /* Notifications */
+.right-header .notification-container .notify-icon {
+    width: 30px;
+    height: 30px;
+}
 
 .right-header .notification-container .dropdown {
-	width: 250px;
-	height: auto;
-	background: var(--sidebar-color);
-	border-radius: 5px;
+    width: 350px;
+    height: auto;
+    background: var(--sidebar-color);
+    border-radius: 5px;
     box-shadow: 0px 1px 5px 0px var(--primary-color);
-	padding: 10px;
+    padding: 5px;
     color: var(--text-color);
-    right: 26px;
+    right: 30px;
     transition: var(--tran-05);
     margin-top: 20px;
-	position: absolute;
-	display: none;
+    position: absolute;
+    display: none;
 }
 
 .right-header .notification-container .dropdown .notify_item {
-	display: flex;
-	align-items: center;
-	padding: 10px 0;
-	border-bottom: 1px solid #dbdaff;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #dbdaff;
 }
 
-.right-header .notification-container .dropdown .notify_item:last-child{
-	border-bottom: 0px;
+.right-header .notification-container .dropdown .notify_item:last-child {
+    border-bottom: 0px;
 }
 
 .right-header .notification-container .dropdown .notify_item .notify_img img {
     background-color: #18191a;
     border-radius: 50%;
-	margin-right: 15px;
+    margin-right: 15px;
 }
 
 .right-header .notification-container .dropdown .notify_item .notify_info p span {
-	color: blue;
-	margin-left: 5px;
+    color: blue;
+    margin-left: 5px;
 }
 
 .right-header .notification-container .dropdown .notify_item .notify_info {
-    font-size: 13px;
+    font-size: 0.7em;
 }
 
-.right-header .notification-container .dropdown .notify_item .notify_info .notify_time{
-	color: var(--primary-color);
-	font-size: 12px;
+.right-header .notification-container .dropdown .notify_item .notify_time {
+    color: var(--primary-color);
+    font-size: 12px;
+    padding-left: 5px;
+    text-align: center;
 }
 
-.right-header .notification-container .dropdown:before{
-	content: "";
-	position: absolute;
-	top: -30px;
-	left: 50%;
-	transform: translateX(-50%);
-	border: 15px solid;
-	border-color: transparent transparent var(--primary-color) transparent;
+.right-header .notification-container .dropdown .notify_item .notify-btn {
+    border: 1px solid var(--primary-color);
+    padding: 3px 25px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: var(--sidebar-color);
+    color: var(--primary-color);
+    font-size: inherit;
+    margin: 5px 0;
 }
 
-.right-header .notification-container .dropdown.active{
-	display: block;
+.right-header .notification-container .dropdown .notify_item .notify-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.right-header .notification-container .dropdown .notify_See_All {
+    display: flex;
+    justify-content: center;
+}
+
+.right-header .notification-container .dropdown .notify_See_All .see-All {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 5px;
+    color: var(--primary-color);
+}
+
+.right-header .notification-container .dropdown:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    left: 64%;
+    transform: translateX(-50%);
+    border: 15px solid;
+    border-color: transparent transparent var(--primary-color) transparent;
+}
+
+.right-header .notification-container .dropdown.active {
+    display: block;
 }
 
 /* leftside bar */
@@ -238,7 +281,7 @@ body.dark {
     top: 0;
     left: 0;
     height: 100%;
-    width: 210px;
+    width: 235px;
     padding: 70px 14px 10px 14px;
     background: var(--sidebar-color);
     transition: var(--tran-05);
@@ -265,7 +308,7 @@ body.dark {
 }
 
 .sidebar .icon {
-    min-width: 60px;
+    min-width: 55px;
     border-radius: 6px;
     height: 100%;
     display: flex;
@@ -442,7 +485,7 @@ header .image-text .profession {
 
 .menu-bar .mode .sun-moon {
     height: 50px;
-    width: 60px;
+    width: 55px;
 }
 
 .mode .sun-moon i {
@@ -503,8 +546,8 @@ header .image-text .profession {
     position: relative;
     top: 0;
     padding: 70px 20px 30px;
-    left: 250px;
-    width: calc(100% - 250px);
+    left: 235px;
+    width: calc(100% - 235px);
     background-color: var(--body-color);
     transition: var(--tran-05);
 }
@@ -611,7 +654,7 @@ header .image-text .profession {
     text-align: left;
     outline: none;
     font-size: 15px;
-    font-weight:500 ;
+    font-weight: 500;
 }
 
 
@@ -639,17 +682,6 @@ header .image-text .profession {
     display: inline;
 }
 
-.main-content .content .tabs {
-    list-style: none;
-    margin-top: 10px;
-    padding: 0;
-    overflow: hidden;
-    overflow-x: scroll;
-    display: flex;
-    justify-content: flex-start;
-    height: 40px;
-}
-
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
@@ -668,32 +700,7 @@ header .image-text .profession {
     border-radius: 10px;
 }
 
-.main-content .content ul li {
-    margin: 0 25px;
-}
-
-.main-content .content ul li a {
-    white-space: nowrap;
-}
-
-.main-content .content li a:hover {
-    padding-bottom: 4px;
-    border-bottom: 3px solid var(--primary-color);
-}
-
-.main-content .content .tab-content {
-    position: absolute;
-    padding: 10px 0;
-    visibility: hidden;
-    height: 0;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.main-content .content .tab-content .course-list {
+.main-content .content .course-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -701,7 +708,7 @@ header .image-text .profession {
     justify-content: center;
 }
 
-.main-content .content .tab-content .course-card {
+.main-content .content .course-card {
     cursor: pointer;
     width: 250px;
     min-height: 290px;
@@ -710,13 +717,13 @@ header .image-text .profession {
     box-shadow: 0px 2px 10px 0px rgb(0 0 0 / 30%);
 }
 
-.main-content .content .tab-content .course-card:hover {
-    transform: translateY(-10px);
+.main-content .content .course-card:hover {
+    transform: translateY(-5px);
     transition: var(--tran-05);
     box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 50%);
 }
 
-.main-content .content .tab-content .course-card img {
+.main-content .content .course-card img {
     display: block;
     width: 100%;
     background-color: #18191a;
@@ -724,17 +731,17 @@ header .image-text .profession {
     height: 120px;
 }
 
-.main-content .content .tab-content .course-card .details {
+.main-content .content .course-card .details {
     padding: 15px;
 }
 
-.main-content .content .tab-content .course-card .details a {
-    font-size:18px;
+.main-content .content .course-card .details a {
+    font-size: 18px;
     font-weight: 500;
     color: black;
 }
 
-.main-content .content .tab-content .course-card .details p {
+.main-content .content .course-card .details p {
     margin-top: 10px;
     margin-right: 0px;
     margin-bottom: 0px;
@@ -742,7 +749,8 @@ header .image-text .profession {
     font-size: 13px;
     color: var(--text-color);
 }
-.main-content .content .tab-content .course-card .details .spec {
+
+.main-content .content .course-card .details .spec {
     margin-top: 3px;
     margin-right: 0px;
     margin-bottom: 0px;
@@ -763,12 +771,13 @@ header .image-text .profession {
     border-bottom: 3px solid var(--primary-color);
 }
 
-.main-content .content .tab-content .bottom-view-more {
+.main-content .content .bottom-view-more {
     width: 100%;
     padding: 10px;
+    text-align: center;
 }
 
-.main-content .content .tab-content .bottom-view-more a:hover {
+.main-content .content .bottom-view-more a:hover {
     color: var(--primary-color);
 }
 
@@ -830,11 +839,6 @@ header .image-text .profession {
     padding: 10px;
 }
 
-.announcment-container .content .banner h1 {
-    display: flex;
-    justify-content: space-between;
-}
-
 .announcment-container .content .banner p {
     font-size: medium;
     color: var(--text-color);
@@ -859,17 +863,17 @@ header .image-text .profession {
 /* Mobile Responsive */
 
 @media screen and (max-width: 1330px) {
-    .main-content .content .tab-content .course-card {
+    .main-content .content .course-card {
         width: 30%;
     }
 }
 
 @media screen and (max-width: 1160px) {
-    .main-content .content .tab-content .course-card .details a {
+    .main-content .content .course-card .details a {
         font-size: 17px;
     }
 
-    .main-content .content .tab-content .course-card .details p {
+    .main-content .content .course-card .details p {
         font-size: 15px;
     }
 
@@ -891,12 +895,13 @@ header .image-text .profession {
         grid-template-columns: 65% 35%;
     }
 
-    .main-content .content .tab-content .course-card {
+    .main-content .content .course-card {
         width: 40%;
     }
 }
 
 @media screen and (max-width: 800px) {
+
     /* width */
     ::-webkit-scrollbar {
         width: 5px;
@@ -944,28 +949,28 @@ header .image-text .profession {
         font-size: 14px;
     }
 
-    .main-content .content .tab-content .course-card {
+    .main-content .content .course-card {
         width: 45%;
     }
 
-    .main-content .content .tab-content .course-card .details {
+    .main-content .content .course-card .details {
         padding: 10px;
     }
 
-    .main-content .content .tab-content .course-card .details a {
+    .main-content .content .course-card .details a {
         font-size: 12px;
     }
 
-    .main-content .content .tab-content .course-card .details p {
+    .main-content .content .course-card .details p {
         font-size: 12px;
         margin: 5px 0 5px 0;
     }
 
-    .main-content .content .tab-content .bottom-view-more {
+    .main-content .content .bottom-view-more {
         padding: 5px 10px;
     }
 
-    .main-content .content .tab-content .bottom-view-more a {
+    .main-content .content .bottom-view-more a {
         font-size: 14px;
     }
 
@@ -1039,6 +1044,7 @@ header .image-text .profession {
     .sidebar li.search-box input {
         font-size: 16px;
     }
+
     .sidebar .icon {
         min-width: 50px;
     }
@@ -1076,16 +1082,32 @@ header .image-text .profession {
         height: 150px;
     }
 
-    .right-header i {
-        padding: 5px 20px;
+    .right-header .all-apps-container .all-apps-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .right-header .notification-container .notify-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .right-header .profile-container .profile-icon {
+        width: 40px;
+        height: 35px;
     }
 
     .right-header .profile-container .dropdown-content {
-        left: -45px;
+        left: -70px;
     }
 
     .right-header .notification-container .dropdown {
-        right: 56px;
+        right: 22px;
+    }
+
+
+    .right-header .notification-container .dropdown .notify_See_All .see-All {
+        font-size: 13px;
     }
 }
 
@@ -1108,7 +1130,7 @@ header .image-text .profession {
         margin: 10px 0 0 0;
     }
 
-    .main-content .content .tab-content .course-card {
+    .main-content .content .course-card {
         width: 40%;
     }
 
@@ -1119,6 +1141,7 @@ header .image-text .profession {
 }
 
 @media screen and (max-width: 545px) {
+
     /* width */
     ::-webkit-scrollbar {
         width: 5px;
@@ -1141,7 +1164,7 @@ header .image-text .profession {
         margin: 10px 0 0 0;
     }
 
-    .main-content .content .tab-content .course-card {
+    .main-content .content .course-card {
         width: 90%;
     }
 
@@ -1154,27 +1177,44 @@ header .image-text .profession {
         margin: 0;
     }
 
-    .right-header .notification-container .dropdown:before {
-        left: 77%;
-    }
-
     .right-header .notification-container .dropdown.active {
         width: 95%;
         position: absolute;
         left: 14px;
     }
 
-    .right-header .profile-container .dropdown-content {
-        left: -105px;
-    }
-
     .right-header .notification-container .dropdown:before {
-        left: 84.4%;
+        left: 72%;
     }
 }
 
 @media screen and (max-width: 450px) {
+
+    .right-header .right-header-icons {
+        margin: 0 15px;
+    }
+
+    .right-header .all-apps-container .all-apps-icon {
+        width: 15px;
+        height: 15px;
+    }
+
+    .right-header .notification-container .notify-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .right-header .profile-container .profile-icon {
+        width: 35px;
+        height: 30px;
+    }
+
     .right-header .notification-container .dropdown:before {
-        left: 79.4%;
+        left: 80%;
+    }
+
+    .right-header .profile-container .dropdown-content {
+        left: -105px;
+        margin-top: 13px;
     }
 }
