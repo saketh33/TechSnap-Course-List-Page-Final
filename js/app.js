@@ -14,14 +14,14 @@ const header = document.querySelector('.header');
 const right_header = header.querySelector('.right-header');
 
 const notification_container = right_header.querySelector('.notification-container');
-const notify = notification_container.querySelector('#notify');
+const notify = notification_container.querySelector('.notify-icon');
 const notifi_dropdown = notification_container.querySelector('.dropdown');
 
 
 const profile_container = header.querySelector('.profile-container');
 const profile_dropdown = profile_container.querySelector('.dropdown-content');
 
-const profile = profile_container.querySelector('#profile');
+const profile = profile_container.querySelector('.profile-icon');
 
 notify.addEventListener('click', function() {
     profile_dropdown.classList.remove('active');
@@ -133,23 +133,3 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-
-const selectTab = element => {
-    let c = main_content.querySelector('.content');
-    let active = c.querySelector('.active');
-    let visible = c.querySelector('.content-visible');
-    let tabContent = document.getElementById(element.href.split('#')[1]);
-    if (active) {
-      active.classList.remove('active');
-    }
-    element.classList.add('active');
-    if (visible) {
-      visible.classList.remove('content-visible');
-    }
-    tabContent.classList.add('content-visible');
-  }
-  document.addEventListener('click', event => {
-    if (event.target.matches('.tab-item a')) {
-      selectTab(event.target);
-    }
-  }, false);
